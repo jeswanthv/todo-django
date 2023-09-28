@@ -1,0 +1,8 @@
+{% extends "main/base.html" %} {% block content %}
+    {% if user.is_authenticated %}
+        <h1>Welcome, {{user.username}}</h1>
+    {% else %} 
+    <h1>Register or login to use Todo App</h1>
+    {% endif %}
+
+{% endblock content %}
